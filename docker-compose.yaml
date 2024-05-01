@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tensorboard:
+    image: tensorflow/tensorflow:latest   # Use an appropriate TensorFlow image
+    command: tensorboard --logdir=/logs --load_fast=false --bind_all 
+    ports:
+      - "6006:6006"  # Map TensorBoard port
+    volumes:
+      - /home/copito/Documents/simple_rl/logs:/logs  # Mount the log directory into the container

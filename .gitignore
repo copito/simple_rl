@@ -1,0 +1,8 @@
+venv/
+*/venv
+
+custom_logs/
+
+lunar_lander_logs/DQN*
+lunar_lander_logs/PPO*
+
